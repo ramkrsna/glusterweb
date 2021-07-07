@@ -32,7 +32,7 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 # General plugins
 
 # Blog plugin
-gem "middleman-blog"
+gem "middleman-blog", ">= 4.0.1"
 #gem "middleman-blog-drafts"
 #gem "middleman-blog-authors"
 
