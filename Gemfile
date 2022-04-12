@@ -45,7 +45,7 @@ gem 'middleman-deploy'
 gem "middleman-favicon-maker"
 
 # HTML & XML parsing smarts
-gem "nokogiri"
+gem "nokogiri", ">= 1.13.4"
 
 # Syntax highlighting
 gem "middleman-syntax"
