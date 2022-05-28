@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 source 'https://rails-assets.org'
 
-gem "middleman", "~> 3.3.3"
+gem "middleman", "~> 4.1.11"
 
 # In order to get SASS 3.3, compass 1.0 is needed
 # FIXME: Remove this once 1.0 is final (very, very soon now -- next week?)
@@ -17,7 +17,7 @@ gem "middleman-livereload"
 # Debugger / REPL alternative to irb
 gem 'pry'
 gem 'pry-stack_explorer'
-gem 'middleman-pry'
+gem 'middleman-pry', '>= 1.0.0'
 
 # Cross-templating language block fix for Ruby 1.8
 platforms :mri_18 do
@@ -32,7 +32,7 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 # General plugins
 
 # Blog plugin
-gem "middleman-blog"
+gem "middleman-blog", ">= 4.0.0"
 #gem "middleman-blog-drafts"
 #gem "middleman-blog-authors"
 
@@ -48,7 +48,7 @@ gem "middleman-favicon-maker"
 gem "nokogiri"
 
 # Syntax highlighting
-gem "middleman-syntax"
+gem "middleman-syntax", ">= 2.1.0"
 
 # For feed.xml.builder
 gem "builder", "~> 3.0"
@@ -71,7 +71,7 @@ gem "bootstrap-sass"
 # There's a bug in with bootstrap-sass + sprockets-sass in 3.3.3
 # FIXME: When a fix is released (3.3.4?), remove this block
 # See: https://github.com/middleman/middleman/issues/1265
-gem 'middleman-sprockets', '3.3.2'
+gem 'middleman-sprockets', '4.0.0'
 
 
 #####
@@ -100,4 +100,4 @@ gem 'font-awesome-middleman'
 # RSS/Atom parsing
 gem "feedjira"
 
-gem 'middleman-google-analytics'
+gem 'middleman-google-analytics', '>= 2.0.0'
